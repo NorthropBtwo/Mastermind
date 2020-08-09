@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/random.js"></script>
+    <script src="javascript/color.js"></script>
+    <script src="javascript/mastermind.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main_page_app_container">
+        <div>
+            <h1>Mastermind</h1>
+        </div>
+        <div class="font_white">
+            <div class="explanation">
+                Guess the 4 colors in the right order
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r0">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r0">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r0">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r0">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr0" class="divGuess" onclick="OnGuess(0)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r1">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r1">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r1">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r1">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr1" class="divGuess" onclick="OnGuess(1)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r2">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r2">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r2">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r2">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr2" class="divGuess" onclick="OnGuess(2)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r3">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r3">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r3">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r3">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr3" class="divGuess" onclick="OnGuess(3)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r4">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r4">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r4">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r4">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr4" class="divGuess" onclick="OnGuess(4)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r5">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r5">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r5">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r5">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr5" class="divGuess" onclick="OnGuess(5)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r6">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r6">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r6">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r6">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr6" class="divGuess" onclick="OnGuess(6)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="pegelRow">
+                <div class="pegelRowLeft">
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p0r7">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p1r7">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p2r7">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+
+                    <div class="custom-select" style="width:20%;margin-bottom: 6.6666666%">
+                        <select id="p3r7">
+                            <option value="-10"></option>
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pegelRowLeft">
+                    <div id="cmdGuessr7" class="divGuess" onclick="OnGuess(7)">
+                        Guess
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomPlaceholder">
+                <div id="divLost" class="divLost divLost-hide">
+                    <div class="lostIndication"> Lost </div>
+                </div>
+                <div id="divReplay" class="divReplay divReplay-hide" onclick="OnRestart()">
+                    Replay
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

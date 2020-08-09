@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES5",
+        "jsx": "preserve",
+        "sourceMap": false,
+        "noImplicitAny": false,
+        "outDir": "javascript/",
+        "rootDir": "typescript/"
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
